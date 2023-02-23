@@ -22,10 +22,10 @@ async function getAIResponse(text){
             presence_penalty: 0.6,
             stop: [" Human:", " Ada:"],
           });
-          console.log(response.data.choices)
+        //   console.log(response.data.choices)
          return await response.data.choices[0].text
     } catch (error) {
-        console.log(error)
+        // console.log(error)
         return "Sorry I can't Talk now"
     }
 }
