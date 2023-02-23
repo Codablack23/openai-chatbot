@@ -1,8 +1,9 @@
 const express = require("express")
 require('dotenv').config()
 const app = express()
-const server = app.listen(process.env.PORT || 5000,
-    ()=>console.log(`Server started at PORT ${process.env.PORT || 5000}`)
+const server = app.listen(process.env.PORT || 5000,()=>{
+        console.log(`Server started at PORT ${process.env.PORT || 5000}`)
+    }
 )
 const {Configuration,OpenAIApi} = require('openai')
 const config = new Configuration({
@@ -22,11 +23,10 @@ async function getAIResponse(text){
             presence_penalty: 0.6,
             stop: [" Human:", " Ada:"],
           });
-        //   console.log(response.data.choices)
          return await response.data.choices[0].text
     } catch (error) {
         // console.log(error)
-        return "Sorry I can't Talk now"
+        return "Sorry I think they might be something wrong with my servers"
     }
 }
 
