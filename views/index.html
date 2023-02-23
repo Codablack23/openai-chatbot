@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Simple AI Chat Bot Demo with Web Speech API">
+    <meta name="author" content="Tomomi Imura  @girlie_mac">
+
+    <title>Simple AI Demo with Web Speech API</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section>
+            <header class="header">  
+                <div>
+                    <p>Simple AI Bot</p>
+                    <p>with Web Speech API</p>
+                </div>
+            </header>
+            <div class="output">
+                <div class="bot-input">
+                     <div class="bot-profile">
+                         <div class="img-container">
+                            <img src="/images/bot.jpg" alt="">
+                         </div>
+                         <p>Ada</p>
+                     </div>
+                    <p class="output-bot message bot">Hello There My Name is Ada You Can start a conversation with me by tapping on the mic button</p>
+                </div>
+                <div class="chat-output">
+    
+                </div>
+                <!-- <div class="your-input">
+                    <div class="bot-profile">
+                        <div class="img-container"></div>
+                        <p>You</p>
+                    </div>
+                    <p class="output-you message input">Tap to talk to assistant</p>
+                </div>             -->
+            </div>
+    
+            <div class="btn-container">
+                <button><i class="fa fa-microphone"></i></button>
+            </div>
+    
+            
+        </section>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

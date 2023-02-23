@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  background: #f7f7f7 url(../images/geometry.png) 0 0 no-repeat;
+  background-size: cover;
+  color: #333;
+}
+footer {
+  font-size: 0.75em;
+  color: silver;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+footer a {
+  color: #f80;
+}
+h1, h2, h3 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+h1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+h2 {
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+.container{
+  max-width: 500px;
+  margin:auto;
+  padding: 16px;
+}
+section {
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  height: 95vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+section .btn-container{
+  position: absolute;
+  height: 70px;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  padding: .7em 1em;
+  margin:auto;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #2F55FF 0%, #2F55FF 80%, #2F55FF 100%);
+  box-shadow: 2px 5px 30px rgba(47,85,255, 0.4);
+
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+button .fa {
+  font-size: 20px;
+  margin: 0;
+  text-shadow: 1px 2px 2px #2F55FF;
+}
+button:hover {
+  transform: scale(.92);
+}
+button:active {
+  filter: brightness(.8);
+}
+button:focus {
+  outline: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}
+.fa-github::before {
+    content: "\f09b";
+}
+.output{
+  padding: 8px;
+  max-height: 65vh;
+  overflow-x: auto;
+  padding-bottom: 70px;
+}
+.header{
+  text-align: center;
+  min-height: 70px;
+  width: 100%;
+  background-color: #FAFAFA;
+  color: grey;
+  padding: 16px 8px;
+}
+.header p{
+ font-size: 18px;
+ font-weight: 700;
+}
+
+.bot-profile{
+  display: flex;
+  align-items: center;
+}
+.bot-profile .img-container{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: lightgray;
+}
+.bot-profile .img-container img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.bot-profile p{
+  color: grey;
+  margin-left: 5px;
+}
+.message{
+  padding: 16px 8px;
+  font-size: 12px;
+  font-weight: light;
+  margin-block: 5px;
+  display:inline-block;
+  max-width: 90%;
+}
+.message.bot{
+  background-color: #2F55FF;
+  color: #fff;
+  border-radius: 0 10px 10px 10px;
+}
+.your-input{
+  margin-top: 12px;
+  text-align: right;
+}
+.your-input .bot-profile{
+  justify-content: flex-end;
+}
+.message.input{
+  margin-left: auto;
+  background-color: #f7f7f7;
+  border-radius: 10px 0px 10px 10px;
+  /* animation: popup2 0.2s 0 infinite; */
+}
+
+@keyframes popup {
+  from{transform: translateX(-100%);}
+  to{transform: scale(0);}
+}
+@keyframes popup2 {
+  from{transform: translateX(-100%);}
+  to{transform: scale(0);}
+}
